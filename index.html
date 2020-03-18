@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" type="text/css" href="main.css" />
+
+    <title>BMI</title>
+</head>
+<body>
+    
+    <header>
+        <h1 class = "header">BMI Calculator</h1>
+    </header>
+    
+    <main>
+        <div class="rangeslider">
+            <h3 class="slider-heading">
+                Weight:
+            </h3>
+            <b id="weight-min"></b>
+            <input type="range" class="slider" id="weightslider">
+            <b id="weight-max"></b><br>
+            <div class="metric-value" id="weight"></div>
+        </div>
+        
+        <div class="rangeslider">
+            <h3 class="slider-heading">
+                Height:
+            </h3>
+            <b id="height-min"></b>
+            <input type="range" class="slider" id="heightslider">
+            <b id="height-max"></b><br>
+            <div class="metric-value" id="height"></div>
+        </div>
+        
+        <p>
+            <button class="btn" id="calculate">Calculate</button>
+        </p>
+        <output>
+            
+        </output>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

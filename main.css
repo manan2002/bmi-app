@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+html {
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+}
+
+body{
+	width: 100wv;
+	height: 100vh;
+	text-align: center;
+	
+	padding: 0;
+	margin: 0;
+}
+
+h1 {
+	text-align: center;
+}
+
+.rangeslider {
+	margin-top: 1em;
+	width: 100vw;
+}
+
+.slider {
+	-webkit-appearance: none;
+	 background: rgb(9,9,121);
+background: -moz-linear-gradient(90deg, rgba(9,9,121,1) 0%, rgba(131,151,207,1) 30%, rgba(131,151,207,1) 70%, rgba(9,9,121,1) 100%);
+background: -webkit-linear-gradient(90deg, rgba(9,9,121,1) 0%, rgba(131,151,207,1) 30%, rgba(131,151,207,1) 70%, rgba(9,9,121,1) 100%);
+background: linear-gradient(90deg, rgba(9,9,121,1) 0%, rgba(131,151,207,1) 30%, rgba(131,151,207,1) 70%, rgba(9,9,121,1) 100%);
+
+	width: 60vw;
+	height: 10px;
+	align-content: enter;
+	-webkit-outline: none;
+	outline: none;
+	border: 2%;
+}
+
+.slider::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	cursor: pointer;
+	background: brown;
+	width: 17px;
+	height: 17px;
+	border-radius: 100%;
+	transform: scale(1.8);
+	transform: rotate(0.4turn);
+}
+
+.slider:hover {
+	opacity: 1;
+	-webkit-outline: none;
+	outline: none;
+}
+
+.slider-heading {
+	padding-left: 16vw;
+	text-align: left;
+}
+
+.metric-value {
+	font-size: 1.5rem;
+	padding-top: 0.5rem;
+
+}
+
+.btn {
+	height: 3rem;
+	width: 7.5rem;
+	font-family: 'Montserrat', sans-serif;
+	color: rgb(9,9,121);
+	background-color: white;
+	border: 2px solid rgb(9,9,121);
+	font-size:1.2rem;
+	box-shadow: 2px 4px;
+	border-radius: 8%;
+}
+
+.btn:hover{
+	transform: scale(1.08);
+}
+.btn:active{
+	background: rgb(9,9,121);
+	color: white;
+	transform: scale(1.01);
+	border: 2px solid rgb(149, 149, 231);
+	
+}
+
+
+.card {
+  margin-left:10%;
+  margin-right:10%;  
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  
+}
+
+.card.visible{
+	animation: slide-up 0.4s ease;
+}
+
+.card.green{
+	color: green;
+	border-top: 4px solid green;
+	border-top-left-radius: 5%;
+	border-top-right-radius: 5%;
+}
+
+.card.red{
+	color: red;
+	border-top: 4px solid red;
+	border-top-left-radius: 5%;
+	border-top-right-radius: 5%;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card-main{
+	padding:3%;	
+}
+
+@keyframes slide-up {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.description{
+	font-size: 1.4rem;
+}
+
+.close-output{
+	float:right;
+	cursor:pointer;
+	border:none;
+	outline:none;
+	background:none;
+	font-size:1.5rem;
+	font-weight:bold;
+	border-radius:50%;	
+} 
+.close-output.green{
+	color:green;
+}
+.close-output.red{
+	color:red;
+}
+
+.hide{
+	animation: hide-card 0.4s ease;
+}
+
+@keyframes hide-card {
+    0% {
+        opacity: 1;
+		transform: translateY(0px);
+	}
+ 
+    100% {
+        opacity: 0;
+		transform: translateY(30px);
+    }
+}
+
